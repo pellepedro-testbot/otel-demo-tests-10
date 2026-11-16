@@ -2,7 +2,7 @@
 
 Black-box pytest tests for one area of the [OpenTelemetry demo](https://github.com/open-telemetry/opentelemetry-demo) frontend API: **ads**, GET /api/data, ads for a category. 400 tests.
 
-This repo owns the ads area. Tests for a change to it belong here, and tests for any other area belong in that area's repo:
+This repo owns the ads area. API tests for a change to it belong here, API tests for any other area belong in that area's repo, and UI tests belong in the UI repo:
 
 | Repo | Area | Covers |
 |---|---|---|
@@ -16,6 +16,7 @@ This repo owns the ads area. Tests for a change to it belong here, and tests for
 | `otel-demo-tests-08` | payment | POST /api/checkout with a card the payment service declines |
 | `otel-demo-tests-09` | recommendations | GET /api/recommendations, related products |
 | `otel-demo-tests-10` | ads | GET /api/data, ads for a category |
+| `otel-demo-tests-11-ui` | ui | the storefront in a browser, Cypress (not generated) |
 
 The tests only talk to the demo over HTTP, through its frontend proxy. They need nothing from the demo's source.
 
